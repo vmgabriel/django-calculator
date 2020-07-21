@@ -1,0 +1,198 @@
+body {
+    background-color: PowderBlue;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+button, a {
+    background-color: DarkGray;
+    height: 50px;
+    margin: 0.4em;
+    color: DarkGreen;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+
+header {
+    background-color: DimGray;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    background-color: WhiteSmoke;
+    color: DarkGreen;
+}
+
+/* Content */
+
+.calculator-block {
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    max-width: 40%;
+    border: 1px solid ForestGreen;
+    border-radius: 10px;
+}
+
+.title-calculator {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    grid-area: title;
+}
+
+.display {
+    grid-area: display;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 16px;
+    margin-color: black;
+}
+
+.display:focus {
+    background-color: LightBlue;
+}
+
+.btn-1 {
+    grid-area: btn-1;
+}
+
+.btn-2 {
+    grid-area: btn-2;
+}
+
+.btn-3 {
+    grid-area: btn-3;
+}
+
+.btn-4 {
+    grid-area: btn-4;
+}
+
+.btn-5 {
+    grid-area: btn-5;
+}
+
+.btn-6 {
+    grid-area: btn-6;
+}
+
+.btn-7 {
+    grid-area: btn-7;
+}
+
+.btn-8 {
+    grid-area: btn-8;
+}
+
+.btn-9 {
+    grid-area: btn-9;
+}
+
+.btn-0 {
+    grid-area: btn-0;
+}
+
+.btn-eq {
+    grid-area: btn-eq;
+}
+
+.btn-ma {
+    grid-area: btn-ma;
+}
+
+.btn-mi {
+    grid-area: btn-mi;
+}
+
+.btn-mu {
+    grid-area: btn-mu;
+}
+
+.btn-di {
+    grid-area: btn-di;
+}
+
+.btn-pa {
+    grid-area: btn-pa;
+}
+
+.btn-pc {
+    grid-area: btn-pc;
+}
+
+.calculator-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title title title title"
+        "display display display display display"
+        "btn-1 btn-2 btn-3 btn-ma btn-ma"
+        "btn-4 btn-5 btn-6 btn-mi btn-mi"
+        "btn-7 btn-8 btn-9 btn-mu btn-di"
+        "btn-0 btn-0 btn-pa btn-pc btn-eq";
+    padding: 5px;
+    border-radius: 10px;
+
+    background-color: Gainsboro;
+}
+
+.error {
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: salmon;
+    border: 1px solid Brown;
+    border-radius: 10px;
+}
+
+.error h2 {
+    color: Firebrick;
+}
+
+.error p {
+    color: SaddleBrown;
+}

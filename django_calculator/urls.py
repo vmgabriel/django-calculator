@@ -15,11 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django_calculator.views import saludo, calcula_edad, json_peticion
+from calculator.views import show_calculator
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    path('', saludo),
-    path('edad/<int:date>', calcula_edad),
-    path('json/', json_peticion)
+    # path('admin/', admin.site.urls)
+    path('', show_calculator)
 ]
